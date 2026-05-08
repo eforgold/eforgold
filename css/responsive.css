@@ -234,6 +234,18 @@
   /* Brand text hide on very small */
   .navbar-brand .brand-text { display: none; }
 }
+  /* Disable sticky header on small screens: make header non-fixed */
+  .header_section,
+  .header_section.innerpage_header,
+  .header_section.scrolled {
+    position: static !important;
+    top: auto !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: none !important;
+  }
 
 /* ─── Small Mobile ───────────────────────────────────────── */
 @media (max-width: 480px) {
